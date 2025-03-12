@@ -17,11 +17,11 @@ class Header extends HTMLElement {
                 <span>myProfile.</span>
             </div>
             <div class="menu">
-                <span><a href="/index.html">HOME</a></span>
-                <span><a href="/pages/about.html">ABOUT</a></span>
-                <span><a href="/pages/portfolio.html">PORTFOLIO</a></span>
-                <span><a href="/pages/blog.html">BLOG</a></span>
-                <span><a href="/pages/contact.html">CONTACT</a></span>
+                <span><a href="/pedromolina.github.io/index.html">HOME</a></span>
+                <span><a href="/pedromolina.github.io/pages/about.html">ABOUT</a></span>
+                <span><a href="/pedromolina.github.io/pages/portfolio.html">PORTFOLIO</a></span>
+                <span><a href="/pedromolina.github.io/pages/blog.html">BLOG</a></span>
+                <span><a href="/pedromolina.github.io/pages/contact.html">CONTACT</a></span>
             </div>
 
         </div>

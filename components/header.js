@@ -17,7 +17,7 @@ class Header extends HTMLElement {
                 <span>myProfile.</span>
             </div>
             <div class="menu">
-                <span><a href="/index.html">ABOUT</a></span>
+                <span><a href="/index.html">HOME</a></span>
                 <span><a href="/pages/about.html">ABOUT</a></span>
                 <span><a href="/pages/portfolio.html">PORTFOLIO</a></span>
                 <span><a href="/pages/blog.html">BLOG</a></span>

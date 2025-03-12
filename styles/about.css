@@ -1,0 +1,338 @@
+/*START reume presentation*/
+.resumePresentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+@media (max-width: 1200px) {
+    .resumePresentation {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.resumeName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primaryColor);
+    color: white;
+    width: 100%;
+    padding-bottom: 50px;
+    margin-bottom: 10px;
+}
+
+.resumeName>h1 {
+    margin-bottom: 0px;
+    font-size: 20px;
+    padding-top: -50px;
+}
+
+
+.resumePicture {
+    display: absolute;
+    z-index: 2;
+    width: 180px;
+    margin-top: -45px;
+}
+
+.resumeAbout {
+    padding-top: 90px;
+    margin-top: -90px;
+    width: 90%;
+    box-shadow: 0px 0px 5px 5px var(--secondaryColor);
+
+}
+
+.resumeAboutText {
+    margin: 10px 50px;
+    text-align: justify;
+    font-size: 12px;
+    color: var(--thirdColor);
+}
+
+.resumeAboutButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0px;
+}
+
+.resumeAboutButtons>button {
+    background-color: var(--fourthColor);
+    box-shadow: 2px 2px 2px 2px var(--secondaryColor);
+    border-style: none;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    width: 150px;
+    color: var(--thirdColor);
+}
+
+.resumeAboutButtons> :hover {
+    box-shadow: 5px 5px 5px 5px var(--secondaryColor);
+    cursor: pointer;
+    color: var(--primaryColor);
+}
+
+/*START reume presentation*/
+
+/*START resume experience*/
+.resumeExperience {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 50px;
+    color: var(--thirdColor);
+}
+
+.resumeExperienceDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100vh;
+}
+
+.resumeExperienceDetailsCard {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 40%;
+    box-shadow: 5px 5px 5px 5px var(--secondaryColor);
+}
+
+.resumeExperienceDetailsCard:nth-child(even) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.resumeExperienceDetailsCard>h2 {
+    width: (100% - 10px);
+    height: 20%;
+    font-size: 12px;
+    padding: 10px 0px;
+    margin: 0;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    background-color: var(--primaryColor);
+    color: white;
+}
+
+.resumeExperienceDetailsCard>h3 {
+    width: calc(100% - 10px);
+    height: 20%;
+    font-size: 12px;
+    padding-left: 10px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.resumeExperienceDetailsCard>p {
+    width: calc(100% - 20px);
+    height: 60%;
+    font-size: 12px;
+    padding: 0px 10px;
+    color: var(--thirdColor);
+    text-align: start;
+}
+
+.resumeExperienceDetailsCardSkills {
+    font-weight: bold;
+}
+
+.resumeExperienceDetailsDivider {
+    height: 100%;
+    margin-top: 75px;
+    margin-bottom: 100px;
+    min-width: 10px;
+    padding-bottom: 10vh;
+    border-radius: 10px;
+    background-color: var(--primaryColor);
+}
+
+@media (max-width: 1200px) {
+
+    .resumeExperience {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        margin-top: 30px;
+        padding: 0;
+    }
+
+    .resumeExperienceDetails {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .resumeExperienceDetailsCard:nth-child(even) {
+        margin: 0px;
+        margin-top: 20px;
+    }
+
+    .resumeExperienceDetailsCard {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+
+    .resumeExperienceDetailsDivider {
+        display: none;
+    }
+}
+
+/*END resume experience*/
+
+/*START resume skills*/
+
+.resumeSkills {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 25vh;
+    margin-left: 15vw;
+    margin-right: 15vw;    
+    margin-top: 30px;
+    margin-bottom: 30px;    
+}
+
+.resumeSkills > h2 {
+    color: var(--thirdColor);
+    width: 100%;
+    text-align: center;    
+}
+
+.resumeSkills > .resumeSkillsCard {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: stretch;
+    align-items: center;    
+    width: 33%;    
+    color: var(--thirdColor);
+    box-shadow: 5px 5px 5px 5px var(--fourthColor);
+}
+
+.resumeSkillsCardList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    align-items: left;
+    width: 100%;        
+}
+
+.resumeSkillsCardListItem {     
+    width: 100%;   
+    margin: 10px 10px;
+    margin-bottom: 20px;
+}
+
+.resumeSkillsCardListItemTitle {    
+    display: flex;
+    justify-content: space-between;    
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.resumeSkillsCardListItemTitle > h4 {    
+    margin: 0;
+}
+
+.resumeSkillsCardListItemProgressBar10 {
+    width: 10%;
+    background-color: red;   
+    height: 5px;    
+}
+
+.resumeSkillsCardListItemProgressBar20 {
+    width: 20%;
+    background-color: red;   
+    height: 5px;    
+}
+
+.resumeSkillsCardListItemProgressBar30 {
+    width: 30%;
+    background-color: orange;    
+    height: 5px;    
+}
+.resumeSkillsCardListItemProgressBar40 {
+    width: 40%;
+    background-color: orange;    
+    height: 5px;    
+}
+
+.resumeSkillsCardListItemProgressBar50 {
+    width: 50%;
+    background-color: gold;        
+    height: 5px;    
+}
+
+.resumeSkillsCardListItemProgressBar60 {
+    width: 60%;
+    background-color: gold;        
+    height: 5px;    
+}
+
+.resumeSkillsCardListItemProgressBar70 {
+    width: 70%;
+    background-color: gold;    
+    height: 5px;    
+}
+
+.resumeSkillsCardListItemProgressBar80 {
+    width: 80%;
+    background-color: darkgreen;    
+    height: 5px;
+}
+
+.resumeSkillsCardListItemProgressBar90 {
+    width: 90%;
+    background-color: darkgreen;    
+    height: 5px;    
+}
+
+.resumeSkillsCardListItemProgressBar100 {
+    width: 100%;
+    background-color: lightgreen;    
+    height: 5px;    
+}
+
+
+@media (max-width: 1200px) {
+
+    .resumeSkills {  
+        display: flex; 
+        flex-flow: row wrap;     
+        margin-left: 15vw;
+        margin-right: 15vw;
+        margin: 0;
+        margin-top: 30px;
+        height: auto;
+        
+    }
+
+    .resumeSkills > .resumeSkillsCard {            
+        width: 90%;  
+        margin: 10px 20px;          
+    }
+}
+
+/*END resume skills*/

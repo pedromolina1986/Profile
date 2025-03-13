@@ -137,29 +137,55 @@
      color: white;
  }
 
- #CSS>.flexbox-container {
+ /* Flexbox examples styling */
+ .flexbox-container {
      display: flex;
      justify-content: space-between;
      background-color: #f1f1f1;
      padding: 10px;
+     border-radius: 5px;
  }
 
- #CSS>.flexbox-item {
-     background-color: #2196F3;
+ .flexbox-item {
+     background-color: #4CAF50;
      color: white;
      padding: 20px;
      text-align: center;
      flex: 1;
      margin: 5px;
+     border-radius: 5px;
  }
 
- #CSS>.flexbox-item:nth-child(odd) {
+ .flexbox-item:nth-child(odd) {
      background-color: #2196F3;
  }
 
- #CSS>.flexbox-row {
+ .flexbox-row {
      display: flex;
      justify-content: center;
+ }
+
+ .flexbox-wrap {
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ .flexbox-item-small {
+     background-color: #FFC107;
+     color: white;
+     padding: 10px;
+     flex: 1 1 100px;
+     margin: 5px;
+     text-align: center;
+ }
+
+ .flexbox-item-large {
+     background-color: #FF5722;
+     color: white;
+     padding: 20px;
+     flex: 2 1 200px;
+     margin: 5px;
+     text-align: center;
  }
 
  /*END CSS*/

@@ -1,0 +1,218 @@
+ /* Style the tab buttons */
+ .tabs {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+ }
+
+ .tab-button {
+     padding: 10px 20px;
+     margin: 0 5px;
+     background-color: var(--fourthColor);
+     border: 1px solid #ccc;
+     border-radius: 5px;
+ }
+
+ .tab-button.active {
+     background-color: var(--thirdColor);
+     color: white;
+ }
+
+ /* Style the tab content */
+ .tab-content {
+     display: none;
+     padding: 20px;
+     border-top: 1px solid var(--secondaryColor);
+ }
+
+ .tab-content.active {
+     display: block;
+ }
+
+
+ /*HTML*/
+
+ #HTML>header {
+     background-color: #2196F3;
+     color: white;
+     padding: 10px 0;
+     text-align: center;
+ }
+
+ #HTML>section {
+     padding: 20px;
+ }
+
+ #HTML>.container {
+     width: 80%;
+     margin: 0 auto;
+ }
+
+ #HTML>h2 {
+     color: #2196F3;
+ }
+
+ #HTML>code {
+     display: block;
+     background-color: #eee;
+     padding: 10px;
+     border-radius: 5px;
+     margin: 10px 0;
+ }
+
+ #HTML>.table-container {
+     width: 100%;
+     overflow-x: auto;
+ }
+
+ #HTML>table {
+     width: 100%;
+     border-collapse: collapse;
+ }
+
+ #HTML>th,
+ td {
+     padding: 10px;
+     text-align: left;
+     border: 1px solid #ddd;
+ }
+
+ #HTML>th {
+     background-color: #2196F3;
+     color: white;
+ }
+
+ /*END HTML*/
+
+ /*CSS*/
+
+ #CSS>header {
+     background-color: #2196F3;
+     color: white;
+     padding: 10px 0;
+     text-align: center;
+ }
+
+ #CSS>section {
+     padding: 20px;
+ }
+
+ #CSS>.container {
+     width: 80%;
+     margin: 0 auto;
+ }
+
+ #CSS>h2 {
+     color: #2196F3;
+ }
+
+ #CSS>code {
+     display: block;
+     background-color: #eee;
+     padding: 10px;
+     border-radius: 5px;
+     margin: 10px 0;
+ }
+
+ #CSS>.table-container {
+     width: 100%;
+     overflow-x: auto;
+ }
+
+ #CSS>table {
+     width: 100%;
+     border-collapse: collapse;
+ }
+
+ #CSS>th,
+ td {
+     padding: 10px;
+     text-align: left;
+     border: 1px solid #ddd;
+ }
+
+ #CSS>th {
+     background-color: #2196F3;
+     color: white;
+ }
+
+ #CSS>.flexbox-container {
+     display: flex;
+     justify-content: space-between;
+     background-color: #f1f1f1;
+     padding: 10px;
+ }
+
+ #CSS>.flexbox-item {
+     background-color: #2196F3;
+     color: white;
+     padding: 20px;
+     text-align: center;
+     flex: 1;
+     margin: 5px;
+ }
+
+ #CSS>.flexbox-item:nth-child(odd) {
+     background-color: #2196F3;
+ }
+
+ #CSS>.flexbox-row {
+     display: flex;
+     justify-content: center;
+ }
+
+ /*END CSS*/
+
+ /*JS*/
+ header {
+     background-color: #2196F3;
+     color: white;
+     padding: 10px 0;
+     text-align: center;
+ }
+
+ section {
+     padding: 20px;
+ }
+
+ .container {
+     width: 80%;
+     margin: 0 auto;
+ }
+
+ h2 {
+     color: #2196F3;
+ }
+
+ code {
+     display: block;
+     background-color: #eee;
+     padding: 10px;
+     border-radius: 5px;
+     margin: 10px 0;
+ }
+
+ .table-container {
+     width: 100%;
+     overflow-x: auto;
+ }
+
+ table {
+     width: 100%;
+     border-collapse: collapse;
+ }
+
+ th,
+ td {
+     padding: 10px;
+     text-align: left;
+     border: 1px solid #ddd;
+ }
+
+ th {
+     background-color: #2196F3;
+     color: white;
+ }
+
+ /*END JS*/

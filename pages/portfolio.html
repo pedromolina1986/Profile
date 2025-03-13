@@ -1,11 +1,484 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/logos.css">
+    <link rel="stylesheet" href="../styles/portfolio.css">
+    <script src="../components/header.js" type="text/javascript" defer></script>
+    <script src="../scripts/portfolio.js" type="text/javascript" defer></script>
+    <title>Pedro Molina - Portfolio</title>
 </head>
+
 <body>
-    <h1>OLA</h1>
+    <div class="mainContainer">
+        <header-component></header-component>
+    </div>
+    <div class="tabs">
+        <div class="tab-button active" onclick="openTab(event, 'HTML')">HTML</div>
+        <div class="tab-button" onclick="openTab(event, 'CSS')">CSS</div>
+        <div class="tab-button" onclick="openTab(event, 'JS')">JS</div>
+    </div>
+
+    <div id="HTML" class="tab-content active">
+        <header>
+            <h1>HTML Cheat Sheet</h1>
+            <p>A quick reference guide for HTML tags and attributes</p>
+        </header>
+
+        <section class="container">
+            <h2>HTML Structure</h2>
+            <p>Every HTML document follows this basic structure:</p>
+            <code>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                &nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+                &nbsp;&nbsp;&lt;title&gt;Document Title&lt;/title&gt;<br>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                &nbsp;&nbsp;&lt;h1&gt;Heading&lt;/h1&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;Your content here&lt;/p&gt;<br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;
+            </code>
+
+            <h2>Common HTML Tags</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tag</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;html&gt;</td>
+                            <td>Defines the root of the HTML document.</td>
+                            <td>&lt;html&gt; &lt;/html&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;head&gt;</td>
+                            <td>Contains metadata like title, links, and scripts.</td>
+                            <td>&lt;head&gt; &lt;/head&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;title&gt;</td>
+                            <td>Defines the title of the document (shown in the browser tab).</td>
+                            <td>&lt;title&gt;Page Title&lt;/title&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;body&gt;</td>
+                            <td>Contains the content of the HTML document (text, images, etc.).</td>
+                            <td>&lt;body&gt; &lt;/body&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;p&gt;</td>
+                            <td>Defines a paragraph of text.</td>
+                            <td>&lt;p&gt;This is a paragraph&lt;/p&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;a&gt;</td>
+                            <td>Defines a hyperlink.</td>
+                            <td>&lt;a href="https://example.com"&gt;Click here&lt;/a&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;img&gt;</td>
+                            <td>Defines an image.</td>
+                            <td>&lt;img src="image.jpg" alt="Description"&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;ul&gt;</td>
+                            <td>Defines an unordered list.</td>
+                            <td>&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;/ul&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;ol&gt;</td>
+                            <td>Defines an ordered list.</td>
+                            <td>&lt;ol&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;/ol&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;li&gt;</td>
+                            <td>Defines a list item (used inside &lt;ul&gt; or &lt;ol&gt;).</td>
+                            <td>&lt;li&gt;Item&lt;/li&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;div&gt;</td>
+                            <td>Defines a division or section in an HTML document.</td>
+                            <td>&lt;div&gt;Content&lt;/div&gt;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>HTML Attributes</h2>
+            <p>Attributes provide additional information about an HTML element. Some common attributes include:</p>
+            <ul>
+                <li><strong>id</strong>: Defines a unique identifier for an element.</li>
+                <li><strong>class</strong>: Specifies a class for an element (can be used for styling).</li>
+                <li><strong>src</strong>: Specifies the source for media elements like images or videos.</li>
+                <li><strong>href</strong>: Specifies the URL for links.</li>
+                <li><strong>alt</strong>: Provides an alternative text for images.</li>
+            </ul>
+
+            <h2>Form Elements</h2>
+            <p>HTML forms are used to collect user input.</p>
+            <code>
+                &lt;form&gt;<br>
+                &nbsp;&nbsp;&lt;label for="name"&gt;Name:&lt;/label&gt;<br>
+                &nbsp;&nbsp;&lt;input type="text" id="name" name="name"&gt;<br>
+                &nbsp;&nbsp;&lt;input type="submit" value="Submit"&gt;<br>
+                &lt;/form&gt;
+            </code>
+
+            <h2>Semantic HTML</h2>
+            <p>Semantic HTML uses tags that convey meaning, helping both browsers and developers.</p>
+            <ul>
+                <li>&lt;header&gt;: Represents the header of a page or section.</li>
+                <li>&lt;footer&gt;: Represents the footer of a page or section.</li>
+                <li>&lt;article&gt;: Represents an independent piece of content.</li>
+                <li>&lt;section&gt;: Represents a section of content.</li>
+                <li>&lt;aside&gt;: Represents content related to the main content, such as a sidebar.</li>
+                <li>&lt;main&gt;: Represents the main content of the document.</li>
+            </ul>
+
+            <h2>Conclusion</h2>
+            <p>This cheat sheet provides an overview of basic HTML tags and their usage. For more detailed learning,
+                refer to HTML documentation and resources.</p>
+        </section>
+    </div>
+    <div id="CSS" class="tab-content">
+        <header>
+            <h1>CSS Cheat Sheet</h1>
+            <p>A quick reference guide for CSS properties and syntax</p>
+        </header>
+
+        <section class="container">
+            <h2>CSS Syntax</h2>
+            <p>CSS syntax is simple and consists of a selector and a declaration block.</p>
+            <code>
+                selector {<br>
+                &nbsp;&nbsp;property: value;<br>
+                }
+            </code>
+
+            <h2>CSS Selectors</h2>
+            <p>CSS selectors are used to target elements in your HTML document.</p>
+            <ul>
+                <li><strong>Universal selector</strong>: <code>*</code> - Targets all elements on the page.</li>
+                <li><strong>Element selector</strong>: <code>p</code> - Targets all <code>&lt;p&gt;</code> elements.
+                </li>
+                <li><strong>Class selector</strong>: <code>.class-name</code> - Targets elements with a specific class.
+                </li>
+                <li><strong>ID selector</strong>: <code>#id-name</code> - Targets an element with a specific ID.</li>
+                <li><strong>Attribute selector</strong>: <code>[attribute]</code> - Targets elements with a specific
+                    attribute.</li>
+                <li><strong>Pseudo-classes</strong>: <code>:hover</code>, <code>:focus</code>, etc.</li>
+                <li><strong>Pseudo-elements</strong>: <code>::before</code>, <code>::after</code></li>
+            </ul>
+
+            <h2>Common CSS Properties</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>color</code></td>
+                            <td>Sets the color of text.</td>
+                            <td><code>color: red;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>background-color</code></td>
+                            <td>Sets the background color of an element.</td>
+                            <td><code>background-color: blue;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>font-size</code></td>
+                            <td>Sets the size of the font.</td>
+                            <td><code>font-size: 16px;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>margin</code></td>
+                            <td>Sets the margin around an element.</td>
+                            <td><code>margin: 10px;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>padding</code></td>
+                            <td>Sets the padding inside an element.</td>
+                            <td><code>padding: 20px;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>border</code></td>
+                            <td>Sets the border of an element.</td>
+                            <td><code>border: 1px solid black;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>width</code></td>
+                            <td>Sets the width of an element.</td>
+                            <td><code>width: 100px;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>height</code></td>
+                            <td>Sets the height of an element.</td>
+                            <td><code>height: 50px;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>display</code></td>
+                            <td>Defines how an element is displayed.</td>
+                            <td><code>display: block;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>font-family</code></td>
+                            <td>Sets the font family for text.</td>
+                            <td><code>font-family: Arial, sans-serif;</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>CSS Layout Properties</h2>
+            <p>These properties control the layout and positioning of elements.</p>
+            <ul>
+                <li><strong>position</strong>: Controls the positioning of an element. Example:
+                    <code>position: absolute;</code></li>
+                <li><strong>top, right, bottom, left</strong>: Used to position elements when <code>position</code> is
+                    set to <code>absolute</code>, <code>relative</code>, or <code>fixed</code>.</li>
+                <li><strong>float</strong>: Makes an element float to the left or right. Example:
+                    <code>float: left;</code></li>
+                <li><strong>clear</strong>: Clears floated elements. Example: <code>clear: both;</code></li>
+                <li><strong>flex</strong>: Flexbox layout for flexible and responsive designs. Example:
+                    <code>display: flex;</code></li>
+                <li><strong>grid</strong>: Grid layout for creating complex layouts. Example:
+                    <code>display: grid;</code></li>
+            </ul>
+
+            <h2>Flexbox Examples</h2>
+            <p>Flexbox is a powerful layout tool in CSS for creating flexible and responsive designs. Here are some
+                examples:</p>
+
+            <h3>1. Basic Flexbox Layout</h3>
+            <p>This layout evenly distributes space between items in a row using <code>display: flex;</code> and
+                <code>justify-content: space-between;</code>:</p>
+            <div class="flexbox-container">
+                <div class="flexbox-item">Item 1</div>
+                <div class="flexbox-item">Item 2</div>
+                <div class="flexbox-item">Item 3</div>
+            </div>
+
+            <h3>2. Centering Items Horizontally and Vertically</h3>
+            <p>To center items both horizontally and vertically, use <code>justify-content: center;</code> and
+                <code>align-items: center;</code>:</p>
+            <div class="flexbox-row" style="height: 200px;">
+                <div class="flexbox-item">Centered</div>
+            </div>
+
+            <h3>3. Flexbox with Wrapping Items</h3>
+            <p>This example shows items wrapping onto a new row when there's not enough space:</p>
+            <div class="flexbox-container" style="flex-wrap: wrap;">
+                <div class="flexbox-item">Item 1</div>
+                <div class="flexbox-item">Item 2</div>
+                <div class="flexbox-item">Item 3</div>
+                <div class="flexbox-item">Item 4</div>
+            </div>
+
+            <h2>CSS Color Values</h2>
+            <p>Colors in CSS can be defined using names, hex codes, RGB, RGBA, HSL, or HSLA.</p>
+            <ul>
+                <li><strong>Named colors</strong>: Example: <code>color: red;</code></li>
+                <li><strong>Hex values</strong>: Example: <code>color: #ff0000;</code></li>
+                <li><strong>RGB values</strong>: Example: <code>color: rgb(255, 0, 0);</code></li>
+                <li><strong>RGBA values (with transparency)</strong>: Example: <code>color: rgba(255, 0, 0, 0.5);</code>
+                </li>
+                <li><strong>HSL values</strong>: Example: <code>color: hsl(0, 100%, 50%);</code></li>
+                <li><strong>HSLA values (with transparency)</strong>: Example:
+                    <code>color: hsla(0, 100%, 50%, 0.5);</code></li>
+            </ul>
+
+            <h2>CSS Transitions and Animations</h2>
+            <p>CSS transitions and animations allow you to create smooth changes between property values.</p>
+            <code>
+                /* Transition example */<br>
+                .box {<br>
+                &nbsp;&nbsp;width: 100px;<br>
+                &nbsp;&nbsp;height: 100px;<br>
+                &nbsp;&nbsp;background-color: red;<br>
+                }<br>
+                .box:hover {<br>
+                &nbsp;&nbsp;background-color: blue;<br>
+                &nbsp;&nbsp;transition: background-color 0.5s;<br>
+                }
+            </code>
+
+            <h2>Conclusion</h2>
+            <p>This cheat sheet covers some of the most commonly used CSS properties and techniques. For more advanced
+                topics, check out additional resources on Flexbox, CSS Grid, and Animations!</p>
+        </section>
+    </div>
+    <div id="JS" class="tab-content">
+        <header>
+            <h1>JavaScript Cheat Sheet</h1>
+            <p>A quick reference guide for JavaScript syntax and concepts</p>
+        </header>
+    
+        <section class="container">
+            <h2>JavaScript Syntax</h2>
+            <p>JavaScript is a programming language used for creating interactive effects within web browsers.</p>
+            <p>The basic syntax includes variables, functions, conditionals, loops, and more.</p>
+    
+            <h2>Variables</h2>
+            <p>In JavaScript, you can declare variables using <code>let</code>, <code>const</code>, or <code>var</code>.</p>
+            <ul>
+                <li><strong>let</strong>: Declares a block-scoped variable.</li>
+                <li><strong>const</strong>: Declares a constant (cannot be reassigned).</li>
+                <li><strong>var</strong>: Declares a function-scoped variable (not recommended due to scoping issues).</li>
+            </ul>
+            <code>
+                let name = "John";<br>
+                const age = 30;<br>
+                var isStudent = true;
+            </code>
+    
+            <h2>Data Types</h2>
+            <p>JavaScript supports the following data types:</p>
+            <ul>
+                <li><strong>String</strong>: Represents text. Example: <code>"Hello, World!"</code></li>
+                <li><strong>Number</strong>: Represents numeric values. Example: <code>123</code></li>
+                <li><strong>Boolean</strong>: Represents true or false. Example: <code>true</code>, <code>false</code></li>
+                <li><strong>Array</strong>: Represents a list of values. Example: <code>[1, 2, 3]</code></li>
+                <li><strong>Object</strong>: Represents a collection of key-value pairs. Example: <code>{name: "John", age: 30}</code></li>
+                <li><strong>Null</strong>: Represents the absence of value. Example: <code>null</code></li>
+                <li><strong>Undefined</strong>: Represents an uninitialized variable.</li>
+            </ul>
+    
+            <h2>Functions</h2>
+            <p>Functions are reusable blocks of code that can be executed when called.</p>
+            <code>
+                function greet(name) {<br>
+                &nbsp;&nbsp;return "Hello, " + name;<br>
+                }<br><br>
+                console.log(greet("John")); // Outputs: Hello, John
+            </code>
+    
+            <h2>Conditionals</h2>
+            <p>Conditionals allow you to execute code based on whether a condition is true or false.</p>
+            <code>
+                if (age > 18) {<br>
+                &nbsp;&nbsp;console.log("Adult");<br>
+                } else {<br>
+                &nbsp;&nbsp;console.log("Minor");<br>
+                }
+            </code>
+    
+            <h2>Loops</h2>
+            <p>Loops are used to repeatedly execute a block of code.</p>
+            <h3>1. For Loop</h3>
+            <code>
+                for (let i = 0; i < 5; i++) {<br>
+                &nbsp;&nbsp;console.log(i);<br>
+                }
+            </code>
+    
+            <h3>2. While Loop</h3>
+            <code>
+                let i = 0;<br>
+                while (i < 5) {<br>
+                &nbsp;&nbsp;console.log(i);<br>
+                &nbsp;&nbsp;i++;<br>
+                }
+            </code>
+    
+            <h3>3. For...of Loop (for Arrays)</h3>
+            <code>
+                let arr = [1, 2, 3, 4, 5];<br>
+                for (let num of arr) {<br>
+                &nbsp;&nbsp;console.log(num);<br>
+                }
+            </code>
+    
+            <h2>Arrays</h2>
+            <p>Arrays are used to store multiple values in a single variable.</p>
+            <code>
+                let fruits = ["apple", "banana", "cherry"];<br>
+                console.log(fruits[0]); // Outputs: apple
+            </code>
+    
+            <h2>Objects</h2>
+            <p>Objects store collections of data in key-value pairs.</p>
+            <code>
+                let person = {<br>
+                &nbsp;&nbsp;name: "John",<br>
+                &nbsp;&nbsp;age: 30,<br>
+                &nbsp;&nbsp;greet: function() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;return "Hello, " + this.name;<br>
+                &nbsp;&nbsp;}<br>
+                };<br><br>
+                console.log(person.name); // Outputs: John
+            </code>
+    
+            <h2>Array Methods</h2>
+            <p>Commonly used methods for working with arrays:</p>
+            <ul>
+                <li><strong>push()</strong>: Adds an item to the end of an array. Example: <code>fruits.push("orange");</code></li>
+                <li><strong>pop()</strong>: Removes the last item from an array. Example: <code>fruits.pop();</code></li>
+                <li><strong>shift()</strong>: Removes the first item from an array. Example: <code>fruits.shift();</code></li>
+                <li><strong>unshift()</strong>: Adds an item to the beginning of an array. Example: <code>fruits.unshift("kiwi");</code></li>
+                <li><strong>map()</strong>: Creates a new array by calling a function on each element. Example: <code>arr.map(x => x * 2);</code></li>
+                <li><strong>filter()</strong>: Creates a new array with elements that pass a test. Example: <code>arr.filter(x => x > 10);</code></li>
+            </ul>
+    
+            <h2>Events</h2>
+            <p>JavaScript can respond to user actions through events like clicks or key presses.</p>
+            <code>
+                let button = document.getElementById("myButton");<br>
+                button.addEventListener("click", function() {<br>
+                &nbsp;&nbsp;alert("Button was clicked!");<br>
+                });
+            </code>
+    
+            <h2>ES6 Features</h2>
+            <p>JavaScript ES6 (ECMAScript 2015) introduced several new features:</p>
+            <h3>1. Arrow Functions</h3>
+            <code>
+                const add = (a, b) => a + b;<br>
+                console.log(add(2, 3)); // Outputs: 5
+            </code>
+    
+            <h3>2. Template Literals</h3>
+            <code>
+                const name = "John";<br>
+                const message = `Hello, ${name}!`;<br>
+                console.log(message); // Outputs: Hello, John!
+            </code>
+    
+            <h3>3. Destructuring</h3>
+            <code>
+                const person = { name: "John", age: 30 };<br>
+                const { name, age } = person;<br>
+                console.log(name, age); // Outputs: John 30
+            </code>
+    
+            <h3>4. Spread Operator</h3>
+            <code>
+                const arr1 = [1, 2, 3];<br>
+                const arr2 = [...arr1, 4, 5];<br>
+                console.log(arr2); // Outputs: [1, 2, 3, 4, 5]
+            </code>
+    
+            <h2>Conclusion</h2>
+            <p>This cheat sheet covers the basics of JavaScript syntax, including variables, data types, functions, loops, arrays, objects, events, and ES6 features. JavaScript is a powerful language for creating interactive web applications. For more advanced topics, check out resources on promises, async/await, and JavaScript frameworks!</p>
+        </section>
+    </div>
+
 </body>
+
 </html>

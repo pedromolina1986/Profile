@@ -1,3 +1,7 @@
+:root {
+    --progressBarRadius: 10px;
+}
+
 /*START reume presentation*/
 .resumePresentation {
     display: flex;
@@ -260,59 +264,70 @@
     width: 10%;
     background-color: red;   
     height: 5px;    
+    border-radius: var(--progressBarRadius);
 }
 
 .resumeSkillsCardListItemProgressBar20 {
     width: 20%;
     background-color: red;   
     height: 5px;    
+    border-radius: var(--progressBarRadius);
 }
 
 .resumeSkillsCardListItemProgressBar30 {
     width: 30%;
     background-color: orange;    
-    height: 5px;    
+    height: 5px;  
+    border-radius: var(--progressBarRadius);
 }
 .resumeSkillsCardListItemProgressBar40 {
     width: 40%;
     background-color: orange;    
-    height: 5px;    
+    height: 5px;  
+    border-radius: var(--progressBarRadius);
 }
 
 .resumeSkillsCardListItemProgressBar50 {
     width: 50%;
     background-color: gold;        
-    height: 5px;    
+    height: 5px;  
+    border-radius: var(--progressBarRadius);
 }
 
 .resumeSkillsCardListItemProgressBar60 {
     width: 60%;
     background-color: gold;        
-    height: 5px;    
+    height: 5px;   
+    border-radius: var(--progressBarRadius);
 }
 
 .resumeSkillsCardListItemProgressBar70 {
     width: 70%;
     background-color: gold;    
-    height: 5px;    
+    height: 5px;   
+    border-radius: var(--progressBarRadius);
 }
 
 .resumeSkillsCardListItemProgressBar80 {
     width: 80%;
-    background-color: darkgreen;    
+    background-color: lightgreen;    
     height: 5px;
+    border-radius: var(--progressBarRadius);
 }
+
 
 .resumeSkillsCardListItemProgressBar90 {
     width: 90%;
-    background-color: darkgreen;    
+    background-color: lightgreen;    
     height: 5px;    
+    border-radius: var(--progressBarRadius);
 }
 
 .resumeSkillsCardListItemProgressBar100 {
     width: 100%;
     background-color: lightgreen;    
     height: 5px;    
+    border-radius: var(--progressBarRadius);
 }
 
 

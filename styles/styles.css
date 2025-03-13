@@ -90,6 +90,13 @@ a:hover {
     min-width: 49vw;    
 } 
 
+.menuLeft {                
+    display: absolute; 
+    visibility: hidden;   
+    width: 15%;
+    z-index: 1;       
+}
+
 .bars {
     display: none;    
 }
@@ -104,7 +111,7 @@ a:hover {
     }
 
     .bars {
-        text-align: right;
+        text-align: left;
         display: inline;    
     }
 }

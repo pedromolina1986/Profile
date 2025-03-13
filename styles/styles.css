@@ -87,14 +87,18 @@ a:hover {
 
 .menu {        
     text-align: right;
-    min-width: 49vw;    
+    min-width: 34vw;    
 } 
 
 .menuLeft {                
-    display: absolute; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    align-items: left;    
     visibility: hidden;   
-    width: 15%;
-    z-index: 1;       
+    min-width: 15vw;    
+    z-index: 1;    
+    font-size: 13px;  
 }
 
 .bars {
@@ -107,7 +111,7 @@ a:hover {
     }
 
     .logo {
-        text-align: right;           
+        text-align: center;           
     }
 
     .bars {

@@ -41,10 +41,10 @@ function openMenuLeft() {
   // get all rendered styles
   const styles = window.getComputedStyle(menuLeft)
   if (styles.visibility == "hidden") {
-    document.getElementById("menuLeft").style.visibility = "visible";
+    document.getElementById("menuLeft").style.visibility = "visible";    
   }
   else {
-    document.getElementById("menuLeft").style.visibility = "hidden";
+    document.getElementById("menuLeft").style.visibility = "hidden";    
   }
 }
 

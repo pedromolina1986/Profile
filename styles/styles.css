@@ -191,9 +191,10 @@ a:hover {
 
 @media (max-width: 1023px) {
     .introPicture img {    
-        width:100%;
+        width:80%;
         padding: auto;
         margin: auto;          
+        margin-left: 10%;          
     }
     
 }

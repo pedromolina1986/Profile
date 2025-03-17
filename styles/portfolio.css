@@ -8,10 +8,12 @@
 
  .tab-button {
      padding: 10px 20px;
-     margin: 0 5px;
+     margin: 5px 5px;
      background-color: var(--fourthColor);
      border: 1px solid #ccc;
      border-radius: 5px;
+     min-width: 50px;
+     text-align: center;
  }
 
  .tab-button.active {
@@ -34,7 +36,7 @@
  /*HTML*/
 
  #HTML>header {
-     background-color: #2196F3;
+     background-color: var(--fifthColor);
      color: white;
      padding: 10px 0;
      text-align: center;
@@ -50,7 +52,7 @@
  }
 
  #HTML>h2 {
-     color: #2196F3;
+     color: var(--fifthColor);;
  }
 
  #HTML>code {
@@ -79,7 +81,7 @@
  }
 
  #HTML>th {
-     background-color: #2196F3;
+     background-color: var(--fifthColor);;
      color: white;
  }
 
@@ -88,7 +90,7 @@
  /*CSS*/
 
  #CSS>header {
-     background-color: #2196F3;
+     background-color: var(--fifthColor);;
      color: white;
      padding: 10px 0;
      text-align: center;
@@ -104,7 +106,7 @@
  }
 
  #CSS>h2 {
-     color: #2196F3;
+     color: var(--fifthColor);;
  }
 
  #CSS>code {
@@ -133,7 +135,7 @@
  }
 
  #CSS>th {
-     background-color: #2196F3;
+     background-color: var(--fifthColor);;
      color: white;
  }
 
@@ -157,7 +159,7 @@
  }
 
  .flexbox-item:nth-child(odd) {
-     background-color: #2196F3;
+     background-color: var(--fifthColor);;
  }
 
  .flexbox-row {
@@ -192,7 +194,7 @@
 
  /*JS*/
  header {
-     background-color: #2196F3;
+     background-color: var(--fifthColor);;
      color: white;
      padding: 10px 0;
      text-align: center;
@@ -208,7 +210,7 @@
  }
 
  h2 {
-     color: #2196F3;
+     color: var(--fifthColor);;
  }
 
  code {
@@ -237,7 +239,7 @@
  }
 
  th {
-     background-color: #2196F3;
+     background-color: var(--fifthColor);;
      color: white;
  }
 

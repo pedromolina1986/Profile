@@ -15,22 +15,21 @@ class Header extends HTMLElement {
             </div>
             <div id="menuLeft" class="menuLeft">
               <span><a href="/pedromolina.github.io/index.html">HOME</a></span>
-              <span><a href="/pedromolina.github.io/pages/about.html">ABOUT</a></span>
-              <span><a href="/pedromolina.github.io/pages/portfolio.html">PORTFOLIO</a></span>
+              <span><a href="/pedromolina.github.io/pages/about.html">RESUME</a></span>
+              <span><a href="/pedromolina.github.io/pages/portfolio.html">CHEAT SHEETS</a></span>
               <span><a href="/pedromolina.github.io/pages/blog.html">BLOG</a></span>
               <span><a href="/pedromolina.github.io/pages/contact.html">CONTACT</a></span>
             </div>
             <div class="logo">
                 <span>myProfile.</span>
             </div>
-            <div class="menu">
-                <span><a href="/pedromolina.github.io/index.html">HOME</a></span>
-                <span><a href="/pedromolina.github.io/pages/about.html">ABOUT</a></span>
-                <span><a href="/pedromolina.github.io/pages/portfolio.html">PORTFOLIO</a></span>
-                <span><a href="/pedromolina.github.io/pages/blog.html">BLOG</a></span>
-                <span><a href="/pedromolina.github.io/pages/contact.html">CONTACT</a></span>
+           <div id="menuLeft" class="menuLeft">
+              <span><a href="/pedromolina.github.io/index.html">HOME</a></span>
+              <span><a href="/pedromolina.github.io/pages/about.html">RESUME</a></span>
+              <span><a href="/pedromolina.github.io/pages/portfolio.html">CHEAT SHEETS</a></span>
+              <span><a href="/pedromolina.github.io/pages/blog.html">BLOG</a></span>
+              <span><a href="/pedromolina.github.io/pages/contact.html">CONTACT</a></span>
             </div>
-
         </div>
       `;
   }

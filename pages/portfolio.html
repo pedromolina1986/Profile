@@ -271,7 +271,8 @@
                 examples:</p>
 
             <h3>1. Basic Flexbox Layout</h3>
-            <p>This layout evenly distributes space between items using <code>justify-content: space-between;</code>:
+            <p>This layout evenly distributes space between items using 
+                <code>justify-content: space-between;</code>:
             </p>
             <div class="flexbox-container">
                 <div class="flexbox-item">Item 1</div>
@@ -287,7 +288,9 @@
             </div>
 
             <h3>3. Flexbox with Wrapping Items</h3>
-            <p>Flexbox items can wrap onto new lines when there's not enough space:</p>
+            <p>Flexbox items can wrap onto new lines when there's not enough space:
+                <code>flex-wrap: wrap;</code>
+            </p>
             <div class="flexbox-wrap">
                 <div class="flexbox-item-small">Item 1</div>
                 <div class="flexbox-item-small">Item 2</div>
@@ -297,7 +300,32 @@
             </div>
 
             <h3>4. Flexbox with Different Item Sizes</h3>
-            <p>Items can take up different amounts of space using <code>flex</code>:</p>
+            <p>Items can take up different amounts of space using 
+                <code>
+                .flexbox-wrap {<br>
+                &nbsp;&nbsp;&lt;display: flex;<br>
+                &nbsp;&nbsp;&lt;flex-wrap: wrap;<br>
+                }<br>
+                <br>
+                .flexbox-item-small {<br>
+                &nbsp;&nbsp;&lt;background-color: #FFC107;<br>
+                &nbsp;&nbsp;&lt;color: white;<br>
+                &nbsp;&nbsp;&lt;padding: 10px;<br>
+                &nbsp;&nbsp;&lt;flex: 1 1 100px;<br>
+                &nbsp;&nbsp;&lt;margin: 5px;<br>
+                &nbsp;&nbsp;&lt;text-align: center;<br>
+                }<br>
+               
+                .flexbox-item-large {<br>
+                &nbsp;&nbsp;&lt;background-color: #FF5722;<br>
+                &nbsp;&nbsp;&lt;color: white;<br>
+                &nbsp;&nbsp;&lt;padding: 20px;<br>
+                &nbsp;&nbsp;&lt;flex: 2 1 200px;<br>
+                &nbsp;&nbsp;&lt;margin: 5px;<br>
+                &nbsp;&nbsp;&lt;text-align: center;<br>
+                }<br>
+               </code>
+            :</p>
             <div class="flexbox-wrap">
                 <div class="flexbox-item-large">Large Item</div>
                 <div class="flexbox-item-small">Small Item</div>

@@ -95,12 +95,15 @@ a:hover {
 .menuLeft {                
     display: flex;
     flex-direction: column; 
-    justify-content: space-evenly;
+    justify-content: baseline;
     align-items: left;    
     visibility: hidden;   
-    min-width: 15vw;    
+    min-width: 15vmin;    
+    min-height: 100vh;    
     z-index: 1;    
-    font-size: 13px;  
+    font-size: 13px;
+    gap: 5px;      
+    padding: 10px;
 }
 
 .bars {
@@ -113,7 +116,7 @@ a:hover {
     }
 
     .logo {
-        text-align: center;           
+        text-align: left;           
     }
 
     .bars {

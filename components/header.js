@@ -23,7 +23,7 @@ class Header extends HTMLElement {
             <div class="logo">
                 <span>myProfile.</span>
             </div>
-           <div id="menuLeft" class="menuLeft">
+           <div id="menu" class="menu">
               <span><a href="/pedromolina.github.io/index.html">HOME</a></span>
               <span><a href="/pedromolina.github.io/pages/about.html">RESUME</a></span>
               <span><a href="/pedromolina.github.io/pages/portfolio.html">CHEAT SHEETS</a></span>

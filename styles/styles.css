@@ -7,16 +7,17 @@
 
     GLOBAL STYLE and HOME STYLE
 
+    reference: Roboto https://fonts.google.com/selection/embed
+
 */
 
-@font-face {
-    font-family: 'Roboto';
-    src: url('roboto.eot'); /* IE9 Compat Modes */
-    src: url('roboto.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('roboto.woff') format('woff'), /* Modern Browsers */
-    url('roboto.ttf')  format('truetype'), /* Safari, Android, iOS */
-    url('roboto.svg#svgFontName') format('svg'); /* Legacy iOS */
-  }
+.roboto {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 12px;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
 
 :root {
     /*colors*/
@@ -76,8 +77,8 @@ a:hover {
 }
 
 .logo {
-    text-align: left;   
-    min-width: 50vw;     
+    text-align: center;   
+    min-width: 50vmin;     
 }
 
 .logo > span {
@@ -87,7 +88,7 @@ a:hover {
 }
 
 .menu {        
-    text-align: right;
+    text-align: center;
     min-width: 34vw;    
 } 
 
@@ -177,8 +178,7 @@ a:hover {
         background-color: inherit;  
         padding: auto;
         margin: auto;          
-    }
-    
+    }    
 }
 
 .introTextRegular {    
@@ -196,8 +196,7 @@ a:hover {
 }
 
 .introPicture img {     
-    clip-path: circle(50%);  
-    width: 70%;
+    clip-path: circle(50%);      
     margin: 20px;    
 }
 

@@ -58,7 +58,7 @@ a {
 }
 
 a:hover {
-    color: var(--thirdColor);
+    color: var(--fifthColor);
 }
 
 /*PAGE HEADER*/
@@ -133,7 +133,7 @@ a:hover {
 }
 
 .menu span:hover {
-    color: var(--thirdColor);
+    color: var(--fifthColor);
     cursor: pointer;
 }
 
@@ -433,7 +433,7 @@ a:hover {
 }
 
 .footerSocialMedias > a:hover {    
-    color: var(--primaryColor);
+    color: var(--fifthColor);
 }
 
 .footerCopyright {

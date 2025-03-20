@@ -13,7 +13,13 @@
     
     <script src="../components/header.js" type="text/javascript" defer></script>
     <script src="../components/footer.js" type="text/javascript" defer></script>
-    <script src="../components/contact.js" type="text/javascript" defer></script>
+    <script src="../scripts/contact.js" type="text/javascript" defer></script>    
+    
+    <!--Mailing-->    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>   
+
     <title>Pedro Molina - Contact</title>
 </head>
 <body>
@@ -31,7 +37,8 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
     
-                <button type="submit">Send</button>
+                <button type="submit">Send</button>                
+                <div id="submitMessage"></div>
             </form>
         </div>        
         

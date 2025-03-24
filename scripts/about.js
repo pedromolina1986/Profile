@@ -33,15 +33,7 @@ const experience = [
             description: "As a Senior Software Consultant at TOTVS, I successfully implemented ERP TOTVS Protheus across 15+ projects, focusing on CRM (Sales) and BI (Business Intelligence) modules. I played a key role in customizing solutions to meet the unique business needs of each client, ensuring smooth deployment and ongoing support.",
             mainSkills: "Software Development (C, PHP, Delphi 7, ADVPL, HTML, CSS, REST, SOAP), Project Management (Agile, Waterfall), ERP implementation, Team Leadership"
         },   
-    {
-        title: "Product Manager",
-        company: "Ideris",
-        period: "Dec 2021 - Sep 2022",
-        location: "Curitiba, Paraná, Brazil",
-        description: "As a Product Manager at Ideris, a fast-growing marketplace HUB startup, I am responsible for defining, developing, and delivering innovative products that create value for both buyers and sellers. Working closely with cross-functional teams—design, engineering, marketing, and sales—I lead the entire product lifecycle, from ideation to launch and ongoing iteration.",
-        mainSkills: "Product Management, Team Leadership, Business Process Automation, ERP integration, RESTful WebServices, Web Services API, Project Management (Agile), Product Design, Product Growth, Anti-Churn"
-    },
-
+    
 ];
 
 //FUNCTION TO POOPULATE DIV OF EXPERIENCES

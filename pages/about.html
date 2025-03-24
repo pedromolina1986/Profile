@@ -12,10 +12,10 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <script src="../components/header.js" type="text/javascript" defer></script>
-    <script src="../components/footer.js" type="text/javascript" defer></script>
+    <script src="../components/header.js" type="text/javascript"></script>
+    <script src="../components/footer.js" type="text/javascript"></script>
 
-    <script src="../scripts/about.js" type="text/javascript" defer></script>    
+    <script src="../scripts/about.js" type="text/javascript"></script>    
     <title>Pedro Molina - Resume</title>
 </head>
 
@@ -56,6 +56,10 @@
 
                 </div>
                 <div class="resumeAboutButtons">
+                    <!--
+                        printResume: Function to print resume and generate file
+                        source: scripts/about.js
+                    -->
                     <button onclick="printResume()">Download CV</button>
                     <button onclick="window.location.href='./contact.html'">Contac Me</button>
                 </div>
@@ -63,76 +67,12 @@
         </div>
         <div class="resumeExperience">
             <h2>Experience</h2>
-            <div class="resumeExperienceDetails">
-                <div class="resumeExperienceDetailsCard">
-                    <h2>Chief Technology Officer</h2>
-                    <h3>Oncrets </h3>
-                    <h3>Oct 2022 - Present </h3>
-                    <h3>Curitiba, Paraná, Brazil</h3>
-                    <p>
-                        As a Software Engineer & CTO at Oncrets, I am responsible for leading a talented engineering
-                        team to deliver high-quality, scalable software solutions. I work closely with cross-functional
-                        teams, including product managers and designers, to define technical requirements and ensure
-                        successful project delivery.
-                    </p>
-                    <p class="resumeExperienceDetailsCardSkills">
-                        Software Development (Javascript, Node.js, React.js, Python, NPM, HTML, CSS, REST), IoT, Project
-                        Management (Agile, Waterfall), Team Leadership
-                    </p>
-                </div>
-                <div class="resumeExperienceDetailsCard">
-                    <h2>Senior Software Developer</h2>
-                    <h3>Pono Tecnologia </h3>
-                    <h3>Jun 2019 - Oct 2022 </h3>
-                    <h3>Curitiba, Paraná, Brazil</h3>
-                    <p>
-                        As the Owner of Pono Tecnologia, I led the implementation of ERP TOTVS Protheus, specializing in
-                        CRM (Sales), Finance, and BI (Business Intelligence) modules. I developed customized software
-                        solutions, focusing on enhancing operational efficiency for clients across various industries.
-                    </p>
-                    <p class="resumeExperienceDetailsCardSkills">
-                        Software Development (C, Javascript, Node.js, React.js, NPM, ADVPL, HTML, CSS, REST), Project
-                        Management (Agile, Waterfall), ERP implementation
-                    </p>
-                </div>
-
-                <div class="resumeExperienceDetailsDivider"></div>
-
-                <div class="resumeExperienceDetailsCard">
-                    <h2>Product Manager</h2>
-                    <h3>Ideris </h3>
-                    <h3>Dec 2021 - Sep 2022 </h3>
-                    <h3>Curitiba, Paraná, Brazil</h3>
-                    <p>
-                        As a Product Manager at Ideris, a fast-growing marketplace HUB startup, I am responsible for
-                        defining, developing, and delivering innovative products that create value for both buyers and
-                        sellers. Working closely with cross-functional teams—design, engineering, marketing, and sales—I
-                        lead the entire product lifecycle, from ideation to launch and ongoing iteration.
-                    </p>
-
-                    <p class="resumeExperienceDetailsCardSkills">
-                        Product Management, Team Leadership, Business Process Automation, ERP integration,
-                        RESTful WebServices, Web Services API, Project Management (Agile), Product Design, Product
-                        Growth, Anti-Churn
-                    </p>
-                </div>
-                <div class="resumeExperienceDetailsCard">
-                    <h2>Senior Software Consultant</h2>
-                    <h3>TOTVS / GoLive </h3>
-                    <h3>Aug 2008 - May 2019 </h3>
-                    <h3>Curitiba, Paraná, Brazil</h3>
-                    <p>
-                        As a Senior Software Consultant at TOTVS, I successfully implemented ERP TOTVS Protheus across
-                        15+ projects, focusing on CRM (Sales) and BI (Business Intelligence) modules. I played a key
-                        role in customizing solutions to meet the unique business needs of each client, ensuring smooth
-                        deployment and ongoing support.
-                    </p>
-                    <p class="resumeExperienceDetailsCardSkills">
-                        Software Development (C, PHP, Delphi 7, ADVPL, HTML, CSS, REST, SOAP), Project Management
-                        (Agile, Waterfall), ERP implementation,
-                        Team Leadership
-                    </p>
-                </div>
+            <div id="resumeExperienceDetails" class="resumeExperienceDetails">
+                <!--
+                    fillExperience: Function to fill experience dynamically
+                    source: scripts/about.js
+                -->
+                <script>fillExperience();</script>                
             </div>
         </div>   
         <div class="resumeSkills">

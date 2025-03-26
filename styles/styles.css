@@ -77,33 +77,24 @@ a:hover {
 }
 
 .logo {
-    text-align: center;   
-    min-width: 50vmin;     
+    text-align: left;   
+    min-width: 50%; 
+    
 }
 
 .logo > span {
     font-size: 1.2em;
-    font-style: bold;
-    margin-left: 5vw;
+    font-style: bold;  
+    margin-left: 20px;  
 }
 
 .menu {        
-    text-align: center;
-    min-width: 34vw;    
+    text-align: right;
+    min-width: 50%;        
 } 
 
-.menuLeft {                
-    display: flex;
-    flex-direction: column; 
-    justify-content: baseline;
-    align-items: left;    
-    visibility: hidden;   
-    min-width: 15vmin;    
-    min-height: 100vh;    
-    z-index: 1;    
-    font-size: 13px;
-    gap: 5px;      
-    padding: 10px;
+.menuLeft { 
+    display: none;
 }
 
 .bars {
@@ -116,12 +107,36 @@ a:hover {
     }
 
     .logo {
-        text-align: left;           
+        text-align: center;           
+        margin: 0px;
+        min-width: 60%;
+    }
+    
+    .logo > span {
+        margin: 0px;
     }
 
     .bars {
+        display: absolute;
+        top: 0;
+        left: 0;
         text-align: left;
-        display: inline;    
+        display: inline;   
+        max-width: 15%; 
+    }
+
+    .menuLeft {                
+        display: flex;
+        flex-direction: column; 
+        justify-content: baseline;
+        align-items: left;    
+        visibility: hidden;          
+        min-height: 100vh;    
+        z-index: 1;    
+        font-size: 13px;        
+        padding: 10px;
+        margin-left: -30px;
+        margin-top: 20px;
     }
 }
 

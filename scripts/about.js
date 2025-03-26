@@ -45,8 +45,10 @@ function fillExperience() {
     const resumeExperienceDetails = document.getElementById("resumeExperienceDetails");
     //set the height size of the div according with the half number of experiences which has a max-height of 45vh with paddings, margins and borders
     if (window.innerWidth > 1200) {
-        resumeExperienceDetails.style.height = 40*tam/2 + "vh";
+        resumeExperienceDetails.style.height = 70*tam/2 + "vmin";
         resumeExperienceDetails.style.marginTop = 50 + "px"; 
+    } else {
+        resumeExperienceDetails.style.height = 100 + "%";
     }
     
     //boolean controller to append just once the divider
@@ -59,12 +61,12 @@ function fillExperience() {
         let newExperience = document.createElement("div");
         newExperience.classList.add("resumeExperienceDetailsCard");
 
-        if (window.innerWidth < 1200) {    
-            resumeExperienceDetails        
+        if (window.innerWidth < 1200) {                
             newExperience.style.marginBottom = 0 + "px";   
             newExperience.style.marginTop = 15 + "px";               
+            
         } else {
-            newExperience.style.maxHeight = 40 + "vh"; 
+            newExperience.style.height = 52 + "vmin";
         }                      
 
         // if the experience is over than the half of the exxperiences then
@@ -120,7 +122,8 @@ function fillExperience() {
 
 //FUNCTION TO CREATE HTML WITH A PROFESSIONAL RESUME
 function printResume() {
-    alert("Under construction!");
+    var pdf = "../documents/Resume_Pedro_Molina.pdf";
+    window.open(pdf);
 
     //document.body.innerHTML = generateResume(personalInfo, education, experience, skills);
 }

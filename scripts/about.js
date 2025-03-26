@@ -44,8 +44,8 @@ function fillExperience() {
     //get the main conatiner of experiences to populate with experiences
     const resumeExperienceDetails = document.getElementById("resumeExperienceDetails");
     //set the height size of the div according with the half number of experiences which has a max-height of 45vh with paddings, margins and borders
-    if (window.innerWidth > 1200) {
-        resumeExperienceDetails.style.height = 70*tam/2 + "vmin";
+    console.log("window.innerWidth", window.innerWidth);
+    if (window.innerWidth > 1200) {       
         resumeExperienceDetails.style.marginTop = 50 + "px"; 
     } else {
         resumeExperienceDetails.style.height = 100 + "%";
@@ -53,7 +53,7 @@ function fillExperience() {
     
     //boolean controller to append just once the divider
     let dividerAppended = false;
-
+    let resumeExperienceDetailsHEIGHT = 0;
     //loop in all experiences
     experience.map((item, count) => {
         
@@ -65,9 +65,7 @@ function fillExperience() {
             newExperience.style.marginBottom = 0 + "px";   
             newExperience.style.marginTop = 15 + "px";               
             
-        } else {
-            newExperience.style.height = 52 + "vmin";
-        }                      
+        }                    
 
         // if the experience is over than the half of the exxperiences then
         // insert the divider once and give margin to its cards to create a visual 
@@ -81,7 +79,7 @@ function fillExperience() {
             }            
            
             if (window.innerWidth > 1200) {
-                newExperience.style.marginTop = 50 + "px";   
+                newExperience.style.marginTop = 55 + "px";   
             }         
             
         } else {
@@ -117,7 +115,13 @@ function fillExperience() {
 
         //append experience card into the experiences container.
         resumeExperienceDetails.appendChild(newExperience);
-    })
+
+        resumeExperienceDetailsHEIGHT += newExperience.offsetHeight - 50;
+    });
+    console.log("resumeExperienceDetailsHEIGHT",resumeExperienceDetailsHEIGHT);
+    if (window.innerWidth > 1200) { 
+        resumeExperienceDetails.style.height = resumeExperienceDetailsHEIGHT + "px";    
+    };
 }
 
 //FUNCTION TO CREATE HTML WITH A PROFESSIONAL RESUME

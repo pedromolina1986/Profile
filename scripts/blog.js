@@ -9,7 +9,7 @@ const blogItems = [
             "<p>Black Sabbath pioneered the genre in the late 1960s and early 1970s with songs like 'Paranoid' and 'War Pigs,' featuring doomy riffs and ominous lyrics.</p>" +
             "<p>Iron Maiden brought a melodic and fast-paced style to metal with songs like 'The Trooper' and 'Hallowed Be Thy Name', emphasizing intricate guitar work and storytelling.</p>" +
             "<p> Judas Priest, known for their twin-guitar attack and high-energy performances, helped define classic heavy metal with anthems like 'Breaking the Law' and 'Painkiller'.</p>",
-        logos: ["../images/Black-Sabbath-Emblem.webp", "../images/Iron-Maiden-Emblem.png", "../images/Judas-Priest-Emblem.jpg"]
+        logos: ["../images/blacksabbath.jpg", "../images/ironmaiden.jpg", "../images/Judas-Priest-Emblem.jpg"]
     },
     {
         coverImage: "../images/American-Football.png",

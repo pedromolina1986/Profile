@@ -120,6 +120,12 @@
     height: 200px; 
 }
 
+@media (max-width: 1600px)  {
+    .blogItemContent {
+        font-size: 10px;
+    }
+}
+
 @media (max-width: 1200px) {
     .blog {
        flex-direction: row;

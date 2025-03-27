@@ -45,7 +45,7 @@ const blogItems = [
         logos: ["../images/CAPA-HQ-PROTOCOLO-GENESIS-N°-1.png", "../images/CAPA-HQ-PROTOCOLO-GENESIS-N°-2.png", "../images/CAPA-HQ-PROTOCOLO-GENESIS-N°-3.jpg"]
     },
     {
-        coverImage: "../images/Breaking-bad.jpg",
+        coverImage: "../images/breakingbad.webp",
         tag: { color: "#94bbe9", gradient:"radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)", text: "Art" },
         title: "Breaking Bad",
         description: "<p>Breaking Bad is a masterfully crafted crime drama that follows a high school chemistry teacher’s transformation into a criminal mastermind.</p>" +

@@ -36,6 +36,15 @@ const blogItems = [
         logos: ["../images/picanha.jpg", "../images/ribs.jpg", "../images/ancho.jpg"]
     },
     {
+        coverImage: "../images/protocolo-genesis.png",
+        tag: { color: "#94bbe9", gradient:"radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)", text: "Art" },
+        title: "Protocolo Genesis",
+        description: "<p>The comic book depicts a dystopian society where humanity is forced to coexist with exiled alien invaders."+
+                    " The social reality revolves around a strong sense of racial segregation against the exiled aliens on our planet and their hybrid descendants.</p>" +
+                     "<p>The storyline explores issues such as prejudice against a race unable to live on its home planet due to the scarcity of natural resources—but barred from Earth simply because they are not as 'human' as we are—the impacts of the inevitable racial mixing between humans and aliens, and who might have a vested interest in ensuring that this new form of racial segregation persists.</p>",
+        logos: ["../images/CAPA-HQ-PROTOCOLO-GENESIS-N°-1.png", "../images/CAPA-HQ-PROTOCOLO-GENESIS-N°-2.png", "../images/CAPA-HQ-PROTOCOLO-GENESIS-N°-3.jpg"]
+    },
+    {
         coverImage: "../images/Breaking-bad.jpg",
         tag: { color: "#94bbe9", gradient:"radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)", text: "Art" },
         title: "Breaking Bad",

@@ -12,7 +12,7 @@ const blogItems = [
         logos: ["../images/blacksabbath.jpg", "../images/ironmaiden.jpg", "../images/Judas-Priest-Emblem.jpg"]
     },
     {
-        coverImage: "../images/American-Football.png",
+        coverImage: "../images/American-Football.jpg",
         tag: { color: "#fdbb2d", gradient: "linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(124,253,45,1) 100%)", text: "Sports" },
         title: "Football",
         description: "<p>American football is an intense and strategic sport that blends power, speed, and intelligence. It’s often compared to chess, where every play is a battle of wits between teams." +
@@ -34,16 +34,7 @@ const blogItems = [
                      "Biting into a perfectly smoked rib, with meat falling off the bone, is pure satisfaction. " +
                      "Whether grilled, smoked, or roasted, barbecue represents patience and passion in cooking.<p>",
         logos: ["../images/picanha.jpg", "../images/ribs.jpg", "../images/ancho.jpg"]
-    },
-    {
-        coverImage: "../images/protocolo-genesis.png",
-        tag: { color: "#94bbe9", gradient:"radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)", text: "Art" },
-        title: "Protocolo Genesis",
-        description: "<p>The comic book depicts a dystopian society where humanity is forced to coexist with exiled alien invaders."+
-                    " The social reality revolves around a strong sense of racial segregation against the exiled aliens on our planet and their hybrid descendants.</p>" +
-                     "<p>The storyline explores issues such as prejudice against a race unable to live on its home planet due to the scarcity of natural resources—but barred from Earth simply because they are not as 'human' as we are—the impacts of the inevitable racial mixing between humans and aliens, and who might have a vested interest in ensuring that this new form of racial segregation persists.</p>",
-        logos: ["../images/CAPA-HQ-PROTOCOLO-GENESIS-N°-1.png", "../images/CAPA-HQ-PROTOCOLO-GENESIS-N°-2.png", "../images/CAPA-HQ-PROTOCOLO-GENESIS-N°-3.jpg"]
-    },
+    },    
     {
         coverImage: "../images/breakingbad.webp",
         tag: { color: "#94bbe9", gradient:"radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)", text: "Art" },
@@ -55,6 +46,15 @@ const blogItems = [
                      "consequences. Maintaining top-tier quality from start to finish, Breaking Bad isn’t just a show—it’s an unforgettable experience and one of the greatest TV " +
                      " series of all time.</p>",
         logos: ["../images/walter-white.png", "../images/jessie.jpg", "../images/Fring.jpg"]
+    },
+    {
+        coverImage: "../images/protocolo-genesis.png",
+        tag: { color: "#94bbe9", gradient:"radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)", text: "Art" },
+        title: "Protocolo Genesis",
+        description: "<p>The comic book depicts a dystopian society where humanity is forced to coexist with exiled alien invaders."+
+                    " The social reality revolves around a strong sense of racial segregation against the exiled aliens on our planet and their hybrid descendants.</p>" +
+                     "<p>The storyline explores issues such as prejudice against a race unable to live on its home planet due to the scarcity of natural resources—but barred from Earth simply because they are not as 'human' as we are—the impacts of the inevitable racial mixing between humans and aliens, and who might have a vested interest in ensuring that this new form of racial segregation persists.</p>",
+        logos: ["../images/CAPA-HQ-PROTOCOLO-GENESIS-N°-1.png", "../images/CAPA-HQ-PROTOCOLO-GENESIS-N°-2.png", "../images/CAPA-HQ-PROTOCOLO-GENESIS-N°-3.jpg"]
     },
     {
         coverImage: "../images/soccer.jpg",

@@ -111,8 +111,7 @@
 }
 
 .blogItemsLogosImage>img {
-    width: 100%;    
-    
+    width: 100%;        
     border-radius: 100px;
 }
 
@@ -187,7 +186,7 @@
         justify-content: center;
         flex-wrap: wrap;
         align-items: center;
-        margin-top: 5px;
+        margin-top: 20px;
         margin-left: 10px;    
     }
     
@@ -203,11 +202,5 @@
         background-size: contain;
         box-shadow: 5px 5px 5px 5px var(--secondaryColor);    
     }
-    
-    .blogItemsLogosImage>img {
-        width: 100%;    
-        margin: 15px;
-        border-radius: 100px;
-    }
-        
+
 }

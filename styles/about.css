@@ -2,8 +2,8 @@
     --progressBarRadius: 10px;
 }
 
-.introPicture img {     
- width: 70%;
+.introPicture img {
+    width: 70%;
 }
 
 /*START reume presentation*/
@@ -57,7 +57,7 @@
 
     .resumeAbout {
         padding-top: 50px;
-        margin-top: -50px;        
+        margin-top: -50px;
     }
 
     .resumePicture {
@@ -118,11 +118,11 @@
 
 .resumeExperienceDetails {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;    
-    width: calc(100vw * 0.9);   
-    
+    flex-wrap: wrap;
+    width: calc(100vw * 0.9);
+
 }
 
 .resumeExperienceDetailsCard {
@@ -131,7 +131,7 @@
     justify-content: baseline;
     align-items: left;
     width: calc(100vw * 0.3);
-    box-shadow: 5px 5px 5px 5px var(--secondaryColor);     
+    box-shadow: 5px 5px 5px 5px var(--secondaryColor);
     margin-bottom: 50px;
 }
 
@@ -208,7 +208,7 @@
         width: 100%;
         margin-top: 20px;
         margin-left: 0px;
-        
+
     }
 
 
@@ -225,25 +225,25 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    align-items: center;    
+    align-items: center;
     margin-left: 15vw;
-    margin-right: 15vw;    
+    margin-right: 15vw;
     margin-top: 30px;
-    margin-bottom: 30px;    
+    margin-bottom: 30px;
 }
 
-.resumeSkills > h2 {
+.resumeSkills>h2 {
     color: var(--thirdColor);
     width: 100%;
-    text-align: center;    
+    text-align: center;
 }
 
-.resumeSkills > .resumeSkillsCard {
+.resumeSkills>.resumeSkillsCard {
     display: flex;
     flex-flow: column wrap;
     justify-content: stretch;
-    align-items: center;    
-    width: 33%;    
+    align-items: center;
+    width: 33%;
     color: var(--thirdColor);
     box-shadow: 5px 5px 5px 5px var(--fourthColor);
 }
@@ -251,79 +251,80 @@
 .resumeSkillsCardList {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
     align-items: left;
-    width: 100%;        
+    width: 100%;
 }
 
-.resumeSkillsCardListItem {     
-    width: 100%;   
+.resumeSkillsCardListItem {
+    width: 100%;
     margin: 10px 10px;
     margin-bottom: 20px;
 }
 
-.resumeSkillsCardListItemTitle {    
+.resumeSkillsCardListItemTitle {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
     margin-bottom: 5px;
     font-size: 13px;
 }
 
-.resumeSkillsCardListItemTitle > h4 {    
+.resumeSkillsCardListItemTitle>h4 {
     margin: 0;
 }
 
 .resumeSkillsCardListItemProgressBar10 {
     width: 10%;
-    background-color: red;   
-    height: 5px;    
+    background-color: red;
+    height: 5px;
     border-radius: var(--progressBarRadius);
 }
 
 .resumeSkillsCardListItemProgressBar20 {
     width: 20%;
-    background-color: red;   
-    height: 5px;    
+    background-color: red;
+    height: 5px;
     border-radius: var(--progressBarRadius);
 }
 
 .resumeSkillsCardListItemProgressBar30 {
     width: 30%;
-    background-color: orange;    
-    height: 5px;  
+    background-color: orange;
+    height: 5px;
     border-radius: var(--progressBarRadius);
 }
+
 .resumeSkillsCardListItemProgressBar40 {
     width: 40%;
-    background-color: orange;    
-    height: 5px;  
+    background-color: orange;
+    height: 5px;
     border-radius: var(--progressBarRadius);
 }
 
 .resumeSkillsCardListItemProgressBar50 {
     width: 50%;
-    background-color: gold;        
-    height: 5px;  
+    background-color: gold;
+    height: 5px;
     border-radius: var(--progressBarRadius);
 }
 
 .resumeSkillsCardListItemProgressBar60 {
     width: 60%;
-    background-color: gold;        
-    height: 5px;   
+    background-color: gold;
+    height: 5px;
     border-radius: var(--progressBarRadius);
 }
 
 .resumeSkillsCardListItemProgressBar70 {
     width: 70%;
-    background-color: gold;    
-    height: 5px;   
+    background-color: gold;
+    height: 5px;
     border-radius: var(--progressBarRadius);
 }
 
 .resumeSkillsCardListItemProgressBar80 {
     width: 80%;
-    background-color: lightgreen;    
+    background-color: lightgreen;
     height: 5px;
     border-radius: var(--progressBarRadius);
 }
@@ -331,35 +332,35 @@
 
 .resumeSkillsCardListItemProgressBar90 {
     width: 90%;
-    background-color: lightgreen;    
-    height: 5px;    
+    background-color: lightgreen;
+    height: 5px;
     border-radius: var(--progressBarRadius);
 }
 
 .resumeSkillsCardListItemProgressBar100 {
     width: 100%;
-    background-color: lightgreen;    
-    height: 5px;    
+    background-color: lightgreen;
+    height: 5px;
     border-radius: var(--progressBarRadius);
 }
 
 
 @media (max-width: 1200px) {
 
-    .resumeSkills {  
-        display: flex; 
-        flex-flow: row wrap;     
+    .resumeSkills {
+        display: flex;
+        flex-flow: row wrap;
         margin-left: 15vw;
         margin-right: 15vw;
         margin: 0;
         margin-top: 30px;
         height: auto;
-        
+
     }
 
-    .resumeSkills > .resumeSkillsCard {            
-        width: 90%;  
-        margin: 10px 20px;          
+    .resumeSkills>.resumeSkillsCard {
+        width: 90%;
+        margin: 10px 20px;
     }
 }
 

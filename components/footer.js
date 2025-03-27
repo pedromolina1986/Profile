@@ -1,10 +1,10 @@
 class Footer extends HTMLElement {
-    constructor() {
-      super();
-    }
-  
-    connectedCallback() {
-      this.innerHTML = `
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.innerHTML = `
           <div class="footer">
             <div class="footerSocialMedias">
                 <a href="https://www.facebook.com/pedro.molina.353803" class="fa fa-facebook"></a>
@@ -21,8 +21,8 @@ class Footer extends HTMLElement {
 
         </div>
         `;
-    }
   }
-  
-  
-  customElements.define('footer-component', Footer);
+}
+
+
+customElements.define('footer-component', Footer);

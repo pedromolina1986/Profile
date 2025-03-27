@@ -1,12 +1,12 @@
 //Listener to submit form.
-document.getElementById('contact-form').addEventListener('submit', function(event) {
+document.getElementById('contact-form').addEventListener('submit', function (event) {
     // Prevent the form from submitting the traditional way
-    event.preventDefault(); 
+    event.preventDefault();
 
     const contactData = {
-        name: {element: document.getElementById('name'), value: document.getElementById('name').value},
-        email: {element: document.getElementById('email'), value: document.getElementById('email').value},
-        message: {element: document.getElementById('message'), value: document.getElementById('message').value},
+        name: { element: document.getElementById('name'), value: document.getElementById('name').value },
+        email: { element: document.getElementById('email'), value: document.getElementById('email').value },
+        message: { element: document.getElementById('message'), value: document.getElementById('message').value },
     }
 
     handleFormData(contactData);
@@ -19,8 +19,8 @@ function handleFormData(contactData) {
     let newMessage = document.createElement("p");
     newMessage.textContent = "Thank you for your contact! I will get back to you ASAP!!! :)";
     newMessage.style.textAlign = "center";
-    newMessage.style.color = "green";    
-    submitMessage.appendChild(newMessage);        
+    newMessage.style.color = "green";
+    submitMessage.appendChild(newMessage);
 
     sendEmail(
         contactData.email.value,
@@ -29,9 +29,9 @@ function handleFormData(contactData) {
     );
 
     //success message
-    setTimeout(() => {        
-        newMessage.remove();        
-    }, 3600);        
+    setTimeout(() => {
+        newMessage.remove();
+    }, 3600);
 
     //clear content
     contactData.name.element.value = "";
@@ -50,6 +50,6 @@ async function sendEmail(email, name, message) {
         email: email,
         message: message
     })
-    .then(res => console.log("SUCCESS", res))
-    .catch(err => console.log("ERROR", err));
+        .then(res => console.log("SUCCESS", res))
+        .catch(err => console.log("ERROR", err));
 }

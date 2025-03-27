@@ -16,7 +16,7 @@
     font-optical-sizing: auto;
     font-weight: 12px;
     font-style: normal;
-    font-variation-settings:"wdth" 100;
+    font-variation-settings: "wdth" 100;
 }
 
 :root {
@@ -29,13 +29,14 @@
     --fifthColor: #2196F3;
 
     /*fonts*/
-    --font:'Roboto', sans-serif;
+    --font: 'Roboto', sans-serif;
 }
 
-html, body {
+html,
+body {
     background-color: var(--backgroundPrimary);
-    box-sizing: border-box;    
-    font-family: var(--font);     
+    box-sizing: border-box;
+    font-family: var(--font);
     color: var(--primaryColor);
     margin: 0;
 }
@@ -44,7 +45,7 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;         
+    align-items: center;
     height: 100vh;
 }
 
@@ -54,7 +55,7 @@ h2 {
 
 a {
     color: var(--primaryColor);
-    text-decoration:none;
+    text-decoration: none;
 }
 
 a:hover {
@@ -66,10 +67,10 @@ a:hover {
     background-color: var(--fourthColor);
     display: flex;
     flex-direction: row;
-    justify-content: left;    
-    font-size: 1em;   
-    padding-top: 1vh;   
-    height: 5vh;          
+    justify-content: left;
+    font-size: 1em;
+    padding-top: 1vh;
+    height: 5vh;
 }
 
 .header * {
@@ -77,42 +78,42 @@ a:hover {
 }
 
 .logo {
-    text-align: left;   
-    min-width: 50%; 
-    
+    text-align: left;
+    min-width: 50%;
+
 }
 
-.logo > span {
+.logo>span {
     font-size: 1.2em;
-    font-style: bold;  
-    margin-left: 20px;  
+    font-style: bold;
+    margin-left: 20px;
 }
 
-.menu {        
+.menu {
     text-align: right;
-    min-width: 50%;        
-} 
+    min-width: 50%;
+}
 
-.menuLeft { 
+.menuLeft {
     display: none;
 }
 
 .bars {
-    display: none;    
+    display: none;
 }
 
 @media (max-width: 580px) {
-    .menu {                
-        display: none; 
+    .menu {
+        display: none;
     }
 
     .logo {
-        text-align: center;           
+        text-align: center;
         margin: 0px;
         min-width: 60%;
     }
-    
-    .logo > span {
+
+    .logo>span {
         margin: 0px;
     }
 
@@ -121,19 +122,19 @@ a:hover {
         top: 0;
         left: 0;
         text-align: left;
-        display: inline;   
-        max-width: 15%; 
+        display: inline;
+        max-width: 15%;
     }
 
-    .menuLeft {                
+    .menuLeft {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
         justify-content: baseline;
-        align-items: left;    
-        visibility: hidden;          
-        min-height: 100vh;    
-        z-index: 1;    
-        font-size: 13px;        
+        align-items: left;
+        visibility: hidden;
+        min-height: 100vh;
+        z-index: 1;
+        font-size: 13px;
         padding: 10px;
         margin-left: -30px;
         margin-top: 20px;
@@ -141,7 +142,7 @@ a:hover {
 }
 
 .menu span {
-    color: var(--primaryColor);    
+    color: var(--primaryColor);
     padding-right: 15px;
     padding-top: 5px;
     font-size: 0.8em;
@@ -154,58 +155,58 @@ a:hover {
 
 /*INTRODUCTION*/
 
-.intro {    
+.intro {
     background-color: var(--fourthColor);
     display: flex;
     justify-content: center;
-    align-items: center;        
-    
+    align-items: center;
+
 }
 
 
 @media (max-width: 1023px) {
-    .intro {    
+    .intro {
         background-color: var(--fourthColor);
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
-        align-items: center;        
-        width: 100%;                
+        align-items: center;
+        width: 100%;
         padding: auto;
         margin: auto;
     }
-    
+
 }
 
 .intro * {
     background-color: var(--fourthColor);
 }
 
-.introText {    
-    width:50%;
+.introText {
+    width: 50%;
     text-align: center;
-    background-color: inherit;    
+    background-color: inherit;
     vertical-align: middle;
     margin-right: 50px;
 }
 
 @media (max-width: 1023px) {
-    .introText {    
-        width:90%;
+    .introText {
+        width: 90%;
         text-align: center;
-        background-color: inherit;  
+        background-color: inherit;
         padding: auto;
-        margin: auto;          
-    }    
+        margin: auto;
+    }
 }
 
-.introTextRegular {    
+.introTextRegular {
     font-size: 15px;
-    color: var(--thirdColor);   
-    
+    color: var(--thirdColor);
+
 }
 
-.introTextName {    
+.introTextName {
     font-size: 40px;
 }
 
@@ -213,39 +214,39 @@ a:hover {
     height: 100%;
 }
 
-.introPicture img {     
-    clip-path: circle(50%);      
-    margin: 20px;    
+.introPicture img {
+    clip-path: circle(50%);
+    margin: 20px;
 }
 
 @media (max-width: 1023px) {
-    .introPicture img {    
-        width:80%;
+    .introPicture img {
+        width: 80%;
         padding: auto;
-        margin: auto;          
-        margin-left: 10%;          
+        margin: auto;
+        margin-left: 10%;
     }
-    
+
 }
 
 /*ABOUT*/
 
-.about {    
+.about {
     display: flex;
-    flex-direction: row;    
-    justify-content: space-evenly;    
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: stretch;
-    flex-basis: auto;    
-    padding-top: 10px;            
+    flex-basis: auto;
+    padding-top: 10px;
     width: 100%;
     min-height: 30vh;
 }
 
-.about > div {    
-    box-shadow: 5px 5px 5px 5px var(--secondaryColor);    
+.about>div {
+    box-shadow: 5px 5px 5px 5px var(--secondaryColor);
     text-align: center;
-    border-radius: 10px;          
-    min-height: 200px;    
+    border-radius: 10px;
+    min-height: 200px;
     min-width: calc(100vw/3 - 6*10px);
     max-width: calc(100vw/3 - 6*10px);
     margin-right: 10px;
@@ -253,23 +254,23 @@ a:hover {
 }
 
 @media (max-width: 1023px) {
-    .about {    
+    .about {
         display: flex;
-        flex-direction: column;    
-        justify-content: space-evenly;    
+        flex-direction: column;
+        justify-content: space-evenly;
         align-items: stretch;
-        flex-basis: auto;    
-        padding-top: 10px;            
+        flex-basis: auto;
+        padding-top: 10px;
         width: 100%;
         min-height: 30vh;
     }
 
-    .about > div {        
-        margin-top: 20px;   
-        max-width: 90vw;               
-        min-width: 90vw;               
+    .about>div {
+        margin-top: 20px;
+        max-width: 90vw;
+        min-width: 90vw;
     }
-    
+
 }
 
 .aboutCard {
@@ -283,150 +284,150 @@ a:hover {
 
 .aboutCardTitle {
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
 }
 
-.aboutCardTitle > a {
+.aboutCardTitle>a {
     background: none;
     color: var(--thirdColor);
     width: 100%;
 }
 
-.aboutCardTitle > h2:hover {    
+.aboutCardTitle>h2:hover {
     color: var(--thirdColor);
-    cursor: pointer;     
+    cursor: pointer;
 }
 
-.aboutCardTitle > a:hover {
-    color: var(--primaryColor);    
-    cursor: pointer;     
+.aboutCardTitle>a:hover {
+    color: var(--primaryColor);
+    cursor: pointer;
 }
 
 .aboutCardContent {
     padding-bottom: 15px;
     padding-top: 15px;
-    
+
 }
 
 /*ABOUT - Professional*/
 
-.aboutCard:first-child > .aboutCardContent  {
+.aboutCard:first-child>.aboutCardContent {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;        
+    align-items: center;
     margin-top: 20px;
 }
 
-.aboutCard:first-child > .aboutCardContent > * > img {
-    width: 200px;                  
-    margin: 10px;               
+.aboutCard:first-child>.aboutCardContent>*>img {
+    width: 200px;
+    margin: 10px;
 }
 
-.aboutCard:first-child > .aboutCardContent > .golive {
+.aboutCard:first-child>.aboutCardContent>.golive {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: left;     
+    align-items: left;
     margin: 10px;
     width: 100%;
 }
 
-.aboutCard:first-child > .aboutCardContent > .golive > a > :first-child {   
-    width: 160px;  
+.aboutCard:first-child>.aboutCardContent>.golive>a> :first-child {
+    width: 160px;
 }
 
-.aboutCard:first-child > .aboutCardContent > .golive > a > :nth-child(2) {   
-    width: 50px;  
+.aboutCard:first-child>.aboutCardContent>.golive>a> :nth-child(2) {
+    width: 50px;
 }
 
-.aboutCard:first-child > .aboutCardContent > a > img:hover {  
-    border-radius: 10px;   
+.aboutCard:first-child>.aboutCardContent>a>img:hover {
+    border-radius: 10px;
     box-shadow: 5px 5px 5px 5px var(--secondaryColor);
-    cursor: pointer;     
+    cursor: pointer;
 }
 
-.aboutCard:first-child > .aboutCardContent > .golive > a:hover {   
-    border-radius: 10px; 
-    box-shadow: 5px 5px  
+.aboutCard:first-child>.aboutCardContent>.golive>a:hover {
+    border-radius: 10px;
+    box-shadow: 5px 5px
 }
 
 /*ABOUT - ACADEMIC*/
-.aboutCard:nth-child(2) > .aboutCardContent {
+.aboutCard:nth-child(2)>.aboutCardContent {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: left;    
-    flex-grow: 1;       
-    width: 100%;      
+    align-items: left;
+    flex-grow: 1;
+    width: 100%;
 }
 
 /*academic history item*/
-.aboutCard:nth-child(2) > .aboutCardContent > div {
+.aboutCard:nth-child(2)>.aboutCardContent>div {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;      
-    margin: 10px;      
-    padding: 10px;                  
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
 }
 
-.aboutCard:nth-child(2) > .aboutCardContent > div:hover {
-    box-shadow: 5px 5px 5px 5px var(--secondaryColor); 
-    cursor: pointer;     
+.aboutCard:nth-child(2)>.aboutCardContent>div:hover {
+    box-shadow: 5px 5px 5px 5px var(--secondaryColor);
+    cursor: pointer;
 }
 
 
 /*academic history item image*/
-.aboutCard:nth-child(2) > .aboutCardContent > div > a > img {
- width: 100px;    
- margin-bottom: 10px;
+.aboutCard:nth-child(2)>.aboutCardContent>div>a>img {
+    width: 100px;
+    margin-bottom: 10px;
 }
 
 /*academic history item description*/
-.aboutCard:nth-child(2) > .aboutCardContent > div > span {
+.aboutCard:nth-child(2)>.aboutCardContent>div>span {
     color: var(--primaryColor);
     font-size: small;
 }
 
 /*academic history item description*/
-.aboutCard:nth-child(2) > .aboutCardContent > div > span:nth-child(3) {
+.aboutCard:nth-child(2)>.aboutCardContent>div>span:nth-child(3) {
     color: var(--thirdColor);
     font-size: small;
 }
 
-.aboutCard:nth-child(2) > .aboutCardContent > div > span:nth-child(4) {
+.aboutCard:nth-child(2)>.aboutCardContent>div>span:nth-child(4) {
     color: var(--thirdColor);
     font-size: small;
 }
 
 /*stack*/
 
-.aboutCard:nth-child(3) > .aboutCardContent {
+.aboutCard:nth-child(3)>.aboutCardContent {
     display: flex;
     flex-direction: right;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: left;    
-    flex-grow: 1;       
-    width: 100%;    
+    align-items: left;
+    flex-grow: 1;
+    width: 100%;
     gap: 20px;
 }
 
-.aboutCard:nth-child(3) > .aboutCardContent > h4 {
+.aboutCard:nth-child(3)>.aboutCardContent>h4 {
     width: 100%;
     text-align: left;
-    color: var(--thirdColor) ;
+    color: var(--thirdColor);
 }
 
-.aboutCard:nth-child(3) > .aboutCardContent > img {
+.aboutCard:nth-child(3)>.aboutCardContent>img {
     width: 50px;
 }
 
 
 /*FOOTER*/
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -442,12 +443,12 @@ a:hover {
     align-items: center;
 }
 
-.footerSocialMedias > a {
+.footerSocialMedias>a {
     background: none;
     color: var(--secondaryColor);
 }
 
-.footerSocialMedias > a:hover {    
+.footerSocialMedias>a:hover {
     color: var(--fifthColor);
 }
 
@@ -456,6 +457,3 @@ a:hover {
     font-size: small;
     color: var(--secondaryColor);
 }
-
-
-

@@ -28,6 +28,14 @@
      border-top: 1px solid var(--secondaryColor);
  }
 
+ .tab-content>header>h1  {
+    margin: 10px 10px;
+}
+
+ .tab-content>header>p  {
+    margin: 10px 10px;
+}
+
  .tab-content.active {
      display: block;
  }

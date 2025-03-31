@@ -43,8 +43,7 @@ function fillExperience() {
 
     //get the main conatiner of experiences to populate with experiences
     const resumeExperienceDetails = document.getElementById("resumeExperienceDetails");
-    //set the height size of the div according with the half number of experiences which has a max-height of 45vh with paddings, margins and borders
-    console.log("window.innerWidth", window.innerWidth);
+    //set the height size of the div according with the half number of experiences which has a max-height of 45vh with paddings, margins and borders    
     if (window.innerWidth > 1200) {
         resumeExperienceDetails.style.marginTop = 50 + "px";
     } else {
@@ -117,8 +116,7 @@ function fillExperience() {
         resumeExperienceDetails.appendChild(newExperience);
 
         resumeExperienceDetailsHEIGHT += newExperience.offsetHeight - 50;
-    });
-    console.log("resumeExperienceDetailsHEIGHT", resumeExperienceDetailsHEIGHT);
+    });    
     if (window.innerWidth > 1200) {
         resumeExperienceDetails.style.height = resumeExperienceDetailsHEIGHT + "px";
     };

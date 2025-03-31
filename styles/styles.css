@@ -133,12 +133,13 @@ a:hover {
         justify-content: baseline;
         align-items: left;
         visibility: hidden;
-        min-height: 10vh;
+        min-height: 100px;
         z-index: 1;
         font-size: 13px;
         padding: 10px;                
         gap: 5px;
         border-radius: 10px;
+        box-shadow: 5px 5px 5px 5px var(--secondaryColor);
     }    
     
 }

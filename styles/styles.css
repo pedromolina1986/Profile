@@ -71,6 +71,7 @@ a:hover {
     font-size: 1em;
     padding-top: 1vh;
     height: 5vh;
+    width: 100%;
 }
 
 .header * {
@@ -132,13 +133,14 @@ a:hover {
         justify-content: baseline;
         align-items: left;
         visibility: hidden;
-        min-height: 100vh;
+        min-height: 10vh;
         z-index: 1;
         font-size: 13px;
-        padding: 10px;
-        margin-left: -30px;
-        margin-top: 20px;
-    }
+        padding: 10px;                
+        gap: 5px;
+        border-radius: 10px;
+    }    
+    
 }
 
 .menu span {

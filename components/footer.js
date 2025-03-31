@@ -1,3 +1,7 @@
+/*
+STYLES in styles.css
+*/
+
 class Footer extends HTMLElement {
   constructor() {
     super();

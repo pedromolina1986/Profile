@@ -33,3 +33,15 @@ Project highlights, in my opinnion:
 3 - Using javascript to fill experience in the about page (about.html/about.js)
 4 - Tab control in the Tutorials (portfolio.html)
 5 - Usage of components header and footer in all pages.
+6 - Using static pages (home, contact, tutorials) and dynamic pages (blog, about);
+
+Refereces:
+1 - ChatGPT: 
+1.a -  Tutorial page (portfolio.html): Some of cheat sheets from CSS, Javascript and HTML content. Prompt - Give me examples of elements and how to use (HTML, CSS, Javascript). The result a inserted in my HTML for the cheat sheets.
+1.b - Blog (blog.js) - Blog text content.
+
+2 - About page (about.html) - Google search "Resume html page style". Chosen style image in the folder /references/Resume.png as a reference to create
+
+3 - Blog (blog.html) - Google search "Blog html page style", Chosen style image in the folder /references/blog.webp as a reference to create
+
+ 4 - Tutorials (portfolio.html) - https://css-tricks.com/snippets/css/a-guide-to-flexbox/ as reference for the design and knowledge base.

@@ -1,3 +1,7 @@
+/*
+STYLES in styles.css
+*/
+
 class Header extends HTMLElement {
   constructor() {
     super();

@@ -24,7 +24,7 @@ references
     Images of other websites used as a reference of this project
 
 
-Published at github pages on: https://pedromolina1986.github.io/pedromolina.github.io/
+Published at github pages on: https://pedromolina1986.github.io/Profile/
 
 
 Project highlights, in my opinnion:
